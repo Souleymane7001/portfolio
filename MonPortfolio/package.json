@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-souleymane",
+  "version": "1.0.0",
+  "description": "Portfolio professionnel de Souleymane Fofana",
+  "main": "script.js",
+  "scripts": {
+    "start": "npx http-server . -p 5000",
+    "deploy": "npx firebase-tools deploy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "firebase-tools": "^12.0.0",
+    "http-server": "^14.1.1"
+  }
+}

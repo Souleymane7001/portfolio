@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souleymane Fofana | Développeur & Designer</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio professionnel de Souleymane Fofana, Développeur Full-Stack et Designer UI/UX basé à Bamako, Mali. Expert en solutions Web, Mobile et identité visuelle.">
+    <meta name="keywords"
+        content="Souleymane Fofana, SoulDev, Développeur Web Bamako, Designer Mali, Flutter Mali, PHP, JavaScript, Portfolio, Web Design">
+    <meta name="author" content="Souleymane Fofana">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portfolio-souleymane.web.app/">
+    <meta property="og:title" content="Souleymane Fofana | Développeur & Designer">
+    <meta property="og:description" content="Je transforme vos idées complexes en solutions numériques élégantes et performantes.">
+    <meta property="og:image" content="assets/SoulDev.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://portfolio-souleymane.web.app/">
+    <meta property="twitter:title" content="Souleymane Fofana | Développeur & Designer">
+    <meta property="twitter:description" content="Je transforme vos idées complexes en solutions numériques élégantes et performantes.">
+    <meta property="twitter:image" content="assets/SoulDev.jpeg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo"><img src="assets/SoulDev.jpeg" alt="Logo"></div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À Propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-btns">
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+            <a href="https://wa.me/22370016948?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20services."
+                target="_blank" class="nav-whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.5rem;">Engagez-moi</a>
+        </div>
+        <!-- Mobile Menu Placeholder -->
+        <div id="menu-icon" class="mobile-menu-icon" style="display:none;"><i class="fas fa-bars"></i></div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="reveal">Salut, Je suis <span>Souleymane Fofana</span></h1>
+            <div class="typing-container reveal">
+                <span id="typing-text"></span><span class="cursor">|</span>
+            </div>
+            <p class="reveal" style="margin-bottom: 2rem; color: var(--text-dim); max-width: 600px;">
+                Je transforme vos idées complexes en solutions numériques élégantes et performantes. Expert en
+                développement Web, Mobile et Design Graphique.
+            </p>
+            <div class="hero-btns reveal">
+                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                <a href="assets/cv.pdf" class="btn btn-secondary" download>Télécharger CV <i
+                        class="fas fa-download"></i></a>
+            </div>
+        </div>
+        <div class="hero-img-container reveal">
+            <div class="hero-img-bg"></div>
+            <img src="assets/sou1-removebg-preview.png" alt="Souleymane Fofana" class="hero-img">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title reveal">À Propos de Moi</h2>
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <h3>Passionné par l'Innovation</h3>
+                <p>
+                    Basé à Bamako, je suis un développeur passionné par la création d'interfaces intuitives et de
+                    systèmes robustes.
+                    Avec une double expertise en design et en développement, j'apporte une vision holistique à chaque
+                    projet.
+                </p>
+                <div class="stats reveal" style="display: flex; gap: 2rem;">
+                    <div>
+                        <h4 style="font-size: 2rem; color: var(--accent-color);">10+</h4>
+                        <p>Projets finis</p>
+                    </div>
+                    <div>
+                        <h4 style="font-size: 2rem; color: var(--accent-color);">10+</h4>
+                        <p>Clients satisfaits</p>
+                    </div>
+                    <div>
+                        <h4 id="messageCounter" style="font-size: 2rem; color: var(--accent-color);">0</h4>
+                        <p>Messages reçus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-card glass reveal" style="padding: 2.5rem; border-left: 5px solid var(--primary-color);">
+                <p style="margin-bottom: 1.5rem;"><strong><i class="fas fa-user" style="margin-right: 10px; color: var(--primary-color);"></i> Nom:</strong> Souleymane Fofana</p>
+                <p style="margin-bottom: 1.5rem;"><strong><i class="fas fa-envelope" style="margin-right: 10px; color: var(--primary-color);"></i> Email:</strong> souleymanefofana540@gmail.com</p>
+                <p style="margin-bottom: 1.5rem;"><strong><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--primary-color);"></i> Localisation:</strong> Bamako, Mali</p>
+                <p><strong><i class="fas fa-briefcase" style="margin-right: 10px; color: var(--primary-color);"></i> Spécialité:</strong> Développeur Full-stack & Designer UI/UX</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title reveal">Mes Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card glass reveal">
+                <i class="fab fa-html5"></i>
+                <h3>HTML/CSS</h3>
+            </div>
+            <div class="skill-card glass reveal">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card glass reveal">
+                <i class="fab fa-php"></i>
+                <h3>PHP</h3>
+            </div>
+            <div class="skill-card glass reveal">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Flutter</h3>
+            </div>
+            <div class="skill-card glass reveal">
+                <i class="fas fa-fire"></i>
+                <h3>Firebase</h3>
+            </div>
+            <div class="skill-card glass reveal">
+                <i class="fas fa-database"></i>
+                <h3>MySQL</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title reveal">Mes Projets Récents</h2>
+        <div class="projects-grid">
+            <article class="project-card glass reveal">
+                <img src="assets/eduhelp.png" alt="EduHelp" class="project-img">
+                <div class="project-info">
+                    <h4>EduHelp</h4>
+                    <p>Une plateforme éducative innovante facilitant l'accès aux cours et au suivi académique pour les
+                        étudiants.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Voir <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/Souleymane7001" target="_blank" class="project-link">Code source <i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card glass reveal">
+                <img src="assets/kafostock.png" alt="Kafostock" class="project-img">
+                <div class="project-info">
+                    <h4>Kafostock</h4>
+                    <p>Logiciel de gestion de stock puissant et intuitif, conçu pour optimiser l'inventaire des
+                        entreprises.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Voir <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/Souleymane7001" target="_blank" class="project-link">Code source <i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card glass reveal">
+                <img src="assets/lvdesign.png" alt="Lv Design" class="project-img">
+                <div class="project-info">
+                    <h4>Lv Design</h4>
+                    <p>Portfolio de créations graphiques incluant logos, affiches publicitaires et charte graphique
+                        complète.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Voir <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/Souleymane7001" target="_blank" class="project-link">Code source <i
+                                class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="section-title reveal">Mes Services</h2>
+        <div class="services-grid">
+            <div class="service-card glass reveal">
+                <div class="service-icon"><i class="fas fa-code"></i></div>
+                <h3>Création de sites web</h3>
+                <p>Développement de sites vitrines, e-commerce et applications web sur mesure.</p>
+            </div>
+            <div class="service-card glass reveal">
+                <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                <h3>Design graphique</h3>
+                <p>Création de logos, affiches, cartes de visite et identité visuelle unique.</p>
+            </div>
+            <div class="service-card glass reveal">
+                <div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+                <h3>Vente de logiciels</h3>
+                <p>Installation et vente de licences de logiciels professionnels (Photoshop, Premiere Pro, Office,
+                    etc.).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title reveal">Témoignages</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card glass reveal">
+                <p>"Souleymane a transformé notre vision en une réalité numérique incroyable. Son professionnalisme est
+                    exemplaire."</p>
+                <div class="client-info">
+                    <img src="assets/Asco.jpeg" alt="Client 1" class="client-img">
+                    <div>
+                        <strong>HAMADOUN ASCO FARE</strong>
+                        <p> ASDigitalMali</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card glass reveal">
+                <p>"Un designer hors pair ! Mes logos sont exactement ce que je voulais, voire mieux. Je recommande
+                    vivement."</p>
+                <div class="client-info">
+                    <img src="assets/MS.jpeg" alt="Client 2" class="client-img">
+                    <div>
+                        <strong>MARAIAM SAGARE</strong>
+                        <p>Fondatrice, Mode Plus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title reveal">Me Contacter</h2>
+        <div class="contact-container">
+            <div class="contact-info reveal">
+                <h3>Discutons de votre projet</h3>
+                <div class="info-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+223 70 01 69 48</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>souleymanefofana540@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Bamako, Mali</span>
+                </div>
+                <!-- WhatsApp Link -->
+                <a href="https://wa.me/22370016948?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20services."
+                    target="_blank" class="btn btn-primary" style="margin-top: 1rem;"><i class="fab fa-whatsapp"></i>
+                    WhatsApp Me</a>
+            </div>
+            <form class="contact-form glass reveal" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="contactName" placeholder="Votre Nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="contactEmail" placeholder="Votre Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="contactMessage" placeholder="Votre Message" required></textarea>
+                </div>
+                <button type="submit" id="submitBtn" class="btn btn-primary" style="width: 100%;">
+                    <span class="btn-text">Envoyer</span>
+                    <span class="btn-loader" style="display:none; margin-left: 10px;"><i
+                            class="fas fa-spinner fa-spin"></i></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="socials">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/22370016948?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20services."
+                target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/Souleymane7001" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2026 Souleymane Fofana. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="glass toast" style="display:none;">
+        <p id="toastMessage"></p>
+    </div>
+
+    <!-- Custom JS (Modular) -->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
